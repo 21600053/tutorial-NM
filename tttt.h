@@ -14,6 +14,8 @@ Description      : myNM.h
 
 #include "myMatrix.h"
 
+//tutorial
+
 
 
 extern	Matrix	addMat(Matrix _A, Matrix _B);
