@@ -3,7 +3,7 @@
 
 Author           : [YOUR NAME]
 Created          : 26-03-2018
-Modified         : 18-03-2021
+Modified         : 03-04-2021
 Language/ver     : C++ in MSVS2019
 
 Description      : myMatrix.h
@@ -16,7 +16,7 @@ Description      : myMatrix.h
 #include <string>
 #include <fstream>
 
-typedef struct { 
+typedef struct {
 	double** at;
 	int rows, cols;
 }Matrix;
@@ -61,5 +61,16 @@ extern	Matrix	copyMat(Matrix _A);
 // Copy matrix Elements from A to B
 extern	void	copyVal(Matrix _A, Matrix _B);
 
+extern	void	gaussElim(Matrix _A, Matrix _b);
+
+extern Matrix backsub(Matrix _U, Matrix _d);
+
+extern Matrix   copyMat(Matrix _A);
+
+
+
+extern Matrix diagonal(int _rows, int _cols);
+
+extern void multiMat(Matrix _A, Matrix _B, Matrix _Out);
 
 #endif
